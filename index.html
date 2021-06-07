@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bryan King</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <script src="https://kit.fontawesome.com/19db73bb7a.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="">Bryan <span>King.</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Banner section starts downwards -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hey, It is </div>
+                <div class="text-2">Bryan King </div>
+                <div class="text-3">And I'm a <span> Strategist</span></div>
+            </div>
+        </div>
+        <div class="body">  
+            <div class="body">
+                <div class="eyes">
+                    <div class="eye eye1">
+                        <div class="ball"></div>
+                    </div>
+                    <div class="eye eye2">
+                        <div class="ball "></div>
+                        <iv>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <script>
+        var ball = document.getElementsByClassName("ball");
+        document.onmousemove = function() {
+            var x = event.clientX * 100 / window.innerWidth + "%";
+            var y = event.clientY * 70 / window.innerHeight + "%";
+
+            for (var i = 0; i < 2; i++) {
+                ball[i].style.left = x / 2;
+                ball[i].style.top = y / 2;
+                ball[i].style.transform = "translate(" + x + "," + y + ")";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+    <!-- <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+</body>
+</html>
