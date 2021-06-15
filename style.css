@@ -5,79 +5,67 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+    /* overflow: hidden; */
 }
 
-/* Navbar styling */
-
-.logo span{
-    color: crimson
-}
-.navbar{
-    position: fixed;
-    width: 100%;
-    /* background: linear-gradient(to left, crimson, black); */
-    font-family: 'Ubuntu', sans-serif;
-    padding: 15px 0;
-}
-.navbar .sticky{
-    padding: 15px 0;
-    background: linear-gradient(to left, crimson, black);  
-}
-.navbar .max-width {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a {
-color: #fff;
-font-size: 18px;
-font-weight: 500;
-margin-left: 25px;
-transition: color 0.3s ease;
-}
-
-/* hover */
-
-.navbar .menu li a:hover{
+/* Nav brand */
+span{
     color: crimson;
+    
 }
-/* banner styling here */
-.home{
-display: flex;
-background: #000 url(bryan.png) no-repeat right;
-height: 100vh;
-color: #fff;
-min-height: 500px;
-font-family: 'Ubuntu', sans-serif;
-}   
+.navbar-brand{
+    color: white !important;
+}
+/* Navbar */
+.navbar1{
+    background:  linear-gradient(to left,black, crimson, black) !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-link{
+    color: white !important;
+    align-items: right !important;
+}
+body, html {
+    height: 100%;
+}
 
-.home .max-width{
-    margin: auto 0 auto 40px;
+a:hover{
+    border: 1px solid white ;
+    border-radius: 5px;
 }
+
+.btn:hover{
+    background-color: crimson;
+    color: white !important;
+}
+
+/* The hero image */
+.home{
+    background-color: black;
+    
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bryan.png");
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
 
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 40px;
+    
+    
 }
 
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
-    margin-left: -3px;
 }
 
 .home .home-content .text-3{
@@ -86,28 +74,129 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .home .home-content .text-3 span{
-    font-weight: 400;
+    font-weight: 600;
     color: crimson;
 }
 
 
-/* mouse -eye move styling */
 
-.ball {
-    background: url(eye.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* hero animation */
+.shape img{
+    width: 50px;
+    
+    animation: bubble 7s linear infinite;
+}
+
+.shape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+/* mouse scrolling effect */
+.balls {
+    background-color: blue;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-left: 5px;
-    position: fixed;
-}
-.eye1{
-    margin-left:558px;
-    margin-top:255px;
+    margin-left: 400px;
 
 }
-.eye2{
-    margin-left:455px;
+
+.eye1{
+margin-left: 400px;
+margin-bottom: 100px;
+}
+.eye2 {
+    margin-left: 130px;
+    margin-bottom: 150px;
+    }
+
+
+    /* bubble on the hero page */
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+   70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80VH);
+        opacity: 0;
+    }
+}
+
+.shape img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.shape img:nth-child(2){
+    animation-delay: 1s;
+}
+.shape img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.shape img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.shape img:nth-child(5){
+    animation-delay: 3s;
+    width: 75px;
+}
+.shape img:nth-child(6){
+    animation-delay: 6s;
+}
+.shape img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
+section .aboutme{
+    height: 100vh;
+}
+
+
+/* skills */
+h6{
+    color: white;
+}
+
+/* Projects */
+.portfolio-item .portfolio-btn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-btn{
+    opacity: 1;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+
+}
+
+.carousel-indicators{
+    
+    height: 0 !important;
+    background-color: crimson;
+    display: unset;
+    bottom: 0 !important;
+    align-items: center;
+    justify-content: center !important;
+
 }

@@ -6,61 +6,332 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bryan King</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <script src="https://kit.fontawesome.com/19db73bb7a.js"></script>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="">Bryan <span>King.</span></a></div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--Banner section starts downwards -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hey, It is </div>
-                <div class="text-2">Bryan King </div>
-                <div class="text-3">And I'm a <span> Strategist</span></div>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg w-100 navbar-dark navbar1 me-3">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="index.html">Bryan <span>King</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link link " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mission">Mission</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="#projects">Tech</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#projects">Music</a></li>
+                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-light ms-3 px-3">Let's Talk</button>
+              </div>
             </div>
-        </div>
-        <div class="body">  
-            <div class="body">
-                <div class="eyes">
-                    <div class="eye eye1">
-                        <div class="ball"></div>
+        </nav>  
+          <section>
+            <div class="hero-image home">
+              <div class="container pt-5 ">
+                <div class="hero-text py-5 ms-0">
+                  <div class="home-content">
+                    <div class="text-1 text-white">Hey, It is </div>
+                    <div class="text-2 text-white">Bryan King </div>
+                    <div class="text-3 text-white">I am a <span class="typing"> </span></div>
+                    <div class="typed-text d-none">Strategist , Serial Tech Entrepreneur, Rockstar, Strategist </div>
+                    <button type="button" class="btn btn-outline-light px-3">Learn More</button>
+                    <div class="body">
+                      <div class="eyes">
+                          <div class="eye eye1">
+                              <div class="balls text-primary"></div>
+                          </div>
+                          <div class="eye eye2">
+                              <div class="balls "></div>
+                          </div>
+                      </div>
+                  </div> 
+                    <div class="shape">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt="">
+                      <img src="images/shape.png" alt=""> 
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+         </section>
+         <section class="aboutme" id="mission">
+            <div class="container-fluid py-5" id="about">
+              <div class="container">
+                  <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6"> Mission</h1>
+                    <h1 class="position-absolute text-uppercase text-danger"> My Mission</h1>
+                  </div>
+                  <div class="row lign-items-center">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                      <img src="images/Bryan.jpeg" alt="" class="img-fluid">
                     </div>
-                    <div class="eye eye2">
-                        <div class="ball "></div>
-                        <iv>
-                    </div>
+                    <div class="col-lg-7">
+                      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators m-auto">
+                          <button type="button pb-5" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button pb-5" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <h2 class="mb-4"> Serial Entrepreneur</h2>
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla animi voluptatibus impedit iste ratione consequatur minus magnam, repellendus commodi qui ipsa aliquam, unde quos reiciendis accusantium officiis! Similique, voluptatum! Earum quidem facere provident. Sunt atque enim repellat fuga, officiis quidem nihil iure ullam nostrum! Dolor debitis alias ratione quod perspiciatis iure reiciendis et blanditiis similique magnam soluta, sunt fugiat neque numquam eveniet dolores rem labore saepe perferendis minus exercitationem quisquam atque at autem! Quos consequatur, quibusdam libero beatae odit veniam modi dolorum facilis deleniti odio, magnam quisquam magni corrupti perspiciatis adipisci aperiam vero porro a voluptatum? Perferendis, odio dolores!
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <h2 class="mb-4"> Serial Entrepreneur</h2>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, quidem dolore. Voluptas repellat beatae vel, magni exercitationem provident nostrum hic pariatur quisquam aperiam reiciendis reprehenderit maiores nam voluptatem dolor dolorem consectetur esse quam commodi error harum illo? Iste nostrum nobis reprehenderit officia quia! Sint quas officiis soluta debitis vel et ducimus animi ipsa aliquam laborum placeat, nisi explicabo a rerum voluptas. Reprehenderit labore, aut, fugiat enim molestias qui maiores autem pariatur quibusdam, obcaecati quo et vero earum vel fuga? Placeat incidunt sint cum repellat sequi sit inventore soluta veritatis tempore blanditiis optio velit iure, adipisci quibusdam accusamus autem, vero nihil!
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
-    </section>
-    <section>
-        <script>
-        var ball = document.getElementsByClassName("ball");
-        document.onmousemove = function() {
-            var x = event.clientX * 100 / window.innerWidth + "%";
-            var y = event.clientY * 70 / window.innerHeight + "%";
-
-            for (var i = 0; i < 2; i++) {
-                ball[i].style.left = x / 2;
-                ball[i].style.top = y / 2;
-                ball[i].style.transform = "translate(" + x + "," + y + ")";
-            }
-        }
-    </script>
+         </section>
+         <section class="myskills bg-dark">
+            <div class="container-fluid py-5" id="skills">
+              <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                  <h1 class="display-1 text-uppercase text-dark" style="-webkit-text-stroke: 1px #606264"> Skills</h1>
+                  <h1 class="position-absolute text-uppercase text-danger"> My skills</h1>
+                </div>
+                <div class="row lign-items-center">
+                  <div class="col-md-6 ">
+                    <div class="skills mb-4" >
+                       <div class="d-flex justify-content-between">
+                          <h6 class="font-width-bold">Music</h6>
+                          <h6 class="font-width-bold">95%</h6>
+                       </div>
+                       <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="skills mb-4" >
+                      <div class="d-flex justify-content-between">
+                         <h6 class="font-width-bold">Strategy</h6>
+                         <h6 class="font-width-bold">95%</h6>
+                      </div>
+                      <div class="progress">
+                       <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                   </div>
+                   <div class="skills mb-4" >
+                     <div class="d-flex justify-content-between">
+                       <h6 class="font-width-bold">Business Develpment</h6>
+                       <h6 class="font-width-bold">95%</h6>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                   </div>
+                   <div class="skills mb-4" >
+                      <div class="d-flex justify-content-between">
+                        <h6 class="font-width-bold">Tech</h6>
+                        <h6 class="font-width-bold">95%</h6>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                    </div>
+                   </div>
+                    <div class="col-md-6 ">
+                      <div class="skills mb-4" >
+                        <div class="d-flex justify-content-between">
+                          <h6 class="font-width-bold">Product Mangement</h6>
+                          <h6 class="font-width-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="skills mb-4" >
+                        <div class="d-flex justify-content-between">
+                          <h6 class="font-width-bold">Managemnt</h6>
+                          <h6 class="font-width-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="skills mb-4" >
+                        <div class="d-flex justify-content-between">
+                          <h6 class="font-width-bold">DevOps</h6>
+                          <h6 class="font-width-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="skills mb-4" >
+                        <div class="d-flex justify-content-between">
+                          <h6 class="font-width-bold">Data Analytics</h6>
+                          <h6 class="font-width-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+            </div>
+          </section>
+          <section class="portfolio " id="projects">
+            <div class="container-fluid pt-5 pb-3" id="portfolio">
+              <div class="container">
+                <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+                  <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6"> Projects</h1>
+                  <h1 class="position-absolute text-uppercase text-danger"> My projects</h1>
+                </div>
+                <div class="row ">
+                  <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-filters">
+                      <li class="btn btn-sm btn-outline-danger m-1 active" data-filter="+">All </li>
+                      <li class="btn btn-sm btn-outline-danger m-1 " data-filter=".first">Tech </li>
+                      <li class="btn btn-sm btn-outline-danger m-1 " data-filter=".second">Music </li>
+                      <li class="btn btn-sm btn-outline-danger m-1 " data-filter=".third">Entrepreneurship </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item first" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/strategist.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/strategist.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item second" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/music-1.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/music-1.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item third" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/tech-2.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/tech-2.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item fourth" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/music-2.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/music-2.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item fifth" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/e-3.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/e-3.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item sixth" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/music-3.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/music-3.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item seventh" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/music-3.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/music-3.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item eighth" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/e-2.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/e-2.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-4 portfolio-item ninth" >
+                      <div class="position-relative overflow-hidden mb-2">
+                        <img src="images/tech-3.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="portfolio-btn bg-danger d-flex align-items-center justify-content-center">
+                          <a href="images/tech-3.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+          </section>
+          <section class="footer">
+              <div class="container-fluid bg-dark text-white mt-5 py-1  px-sm-1 px-md-5">
+                  <div class="container text-danger py-5">
+                      <div class="d-flex justify-content-center mb-4 px-3">
+                          <a href="" class="btn btn-light btn-social mr-2"><i class="fab fa-twitter"></i></a>
+                          <a href="" class="btn btn-light btn-social mr-2"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="" class="btn btn-light btn-social mr-2"><i class="fab fa-facebook-f"></i></a>
+                          <a href="" class="btn btn-light btn-social mr-2"><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+           
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="script.js"></script>
-    <!-- <script src="js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
 </body>
 </html>
